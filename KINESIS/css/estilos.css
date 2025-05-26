@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Serif", Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.textos h1, .textos h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.textos h3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    background: url('../imag/bg.jpg') #c3eabc;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .contenedor {
+    position: relative;
+    height: 663px;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background: black;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+header .menu {
+    width: 100%;
+    text-align: right;
+}
+
+header .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+header .textos {
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+
+header .textos .nombre {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+header .textos .nombre span {
+    font-weight: 400;
+}
+
+header .textos h3 {
+    font-weight: 400;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* MAIN */
+.main {
+    background: url(../imag/bg-textura.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main .acerca-de .contenedor {
+    overflow: visible;
+    position: relative;
+    background-color: transparent;;
+}
+
+.main .acerca-de .foto {
+    width: 70%;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    z-index: 0;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .35);
+}
+
+.main .acerca-de .foto img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.main .acerca-de article {
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    float: right;
+    z-index: 1;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .35);
+    background-color: transparent;
+}
+
+
+.main .acerca-de article h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.main .acerca-de article p {
+    line-height: 28px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.main .menu {
+    padding-top: 570px;
+    margin-bottom: 50px;
+}
+
+.registro {
+    background: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.registro input, .registro select {
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.registro .titulo {
+    color: white;
+}
+
+.registro button {
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+  z-index: 1; /* Asegura que el texto esté encima del ::before */
+  overflow: hidden; /* Para que la animación no se desborde */
+}
+
+.registro button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue
+  );
+  background-size: 800%;
+  border-radius: 12px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  z-index: -1; /* Detrás del texto */
+}
+
+
+
+
+
+@keyframes glowing {
+0% {
+    background-position: 0 0;
+}
+
+50% {
+    background-position: 400% 0;
+}
+
+100% {
+    background-position: 0 0;
+}
+}
+
+
+.main .eventos {
+    padding: 100px 0;
+    background-color: #f5f5f5;
+}
+
+.main .eventos .titulo {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.main .eventos .contenedor-eventos {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.main .eventos .evento {
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #2c2d2d;
+}
+
+.main .eventos .evento:hover {
+    transform: translateY(-10px);
+}
+
+.main .eventos .evento img {
+  width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.main .eventos .evento .contenido {
+    padding: 20px;
+}
+
+
+.main .eventos .evento h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.main .eventos .evento p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.testimonios {
+    background: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    font-style: italic;
+    color: white;
+}
+
+
+.main .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.main .galeria .imagen {
+    width: 100%;
+    max-width: 700px; /* Tamaño más pequeño */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.main .galeria .imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Imagen de arriba alineada a la izquierda */
+.main .galeria .imagen-izquierda {
+    align-self: center;
+}
+
+/* Imagen de abajo alineada a la derecha */
+.main .galeria .imagen-derecha {
+    align-self: center;
+}
+    
+
+
+.main .ubicacion {
+    background: black;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.main .ubicacion .titulo {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.main .ubicacion .direccion {
+    float: left;
+    width: 50%;
+    text-align: left;
+    color: white;
+}
+
+.main .ubicacion .horarios {
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+    color: white;
+}
+
+.main .ubicacion .direccion .calle {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.main .ubicacion .horarios h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    padding: 20px 0;
+}
+
+footer .copyright {
+    text-align: center;
+    padding: 15px; 
+    color: #fff;
+}
+
+footer .copyright p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* MEDIAQUERIES */
+@media screen and (max-width: 800px) {
+    header .contenedor {
+        position: static;
+        height: auto;
+    }
+
+    header .textos {
+        position: static;
+        margin: 100px 0;
+    }
+
+    header .menu {
+        text-align: center;
+    }
+
+    header .menu a{
+        margin: 10px 20px;
+    }
+
+    header .textos .nombre {
+        font-size: 30px;
+    }
+
+    header .textos h3 {
+        font-size: 18px;
+    }
+
+    .main .acerca-de .foto {
+        width: 100%;
+        position: relative;
+    }
+
+    .main .acerca-de article {
+        position: relative;
+        width: 100%;
+        top: -60px;
+        transform: translate(0px, 0);
+    }
+
+    .main .menu {
+        padding-top: 250px;  
+    }
+
+    .main .menu article {
+        width: 100%;
+    }
+
+    .main .galeria .foto {
+        width: 50%;
+    }
+
+    .main .mapa {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main .acerca-de article h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .main .menu article .nombre,
+    .main .menu article .precio {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .main .ubicacion .direccion {
+        margin-bottom: 15px;
+    }
+
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

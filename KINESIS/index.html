@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>KINESIS</title>
+</head>
+<body>
+
+	<header>
+		<div class="contenedor">
+			<nav class="menu">
+				<a href="#" id="btn-acerca-de">Acerca de</a>
+				<a href="#" id="btn-menu">Menú</a>
+				<a href="#" id="btn-galeria">Galería</a>
+				<a href="#" id="btn-ubicacion">Ubicación</a>
+			</nav>
+
+			<div class="textos">
+				<h1 class="nombre"><span>KINESIS</span></h1>
+				<h3>Donde el deporte encuentra un espacio</h3>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+
+		<section class="acerca-de" id="acerca-de">
+			<div class="contenedor">
+				<div class="foto">
+					<img src="imag/acerca-de.jpg">
+				</div>
+				<article>
+					<h3>Acerca de</h3>
+					<p>En Kinesis, creemos que el movimiento transforma vidas.
+					Kinesis es una empresa comprometida con la promoción del deporte como herramienta de transformación social, salud y desarrollo personal. Nos especializamos en la organización, coordinación y difusión de eventos deportivos de alto impacto, con enfoque en la participación comunitaria, la inclusión y la excelencia operativa.</p>
+					
+				</article>
+			</div>
+		</section>
+
+		<section class="main eventos">
+		    <div class="contenedor">
+		        <h2 class="titulo">Próximos Eventos</h2>
+		        <div class="contenedor-eventos">
+		            <div class="evento" data-aos="zoom-in" data-aos-delay="200" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScu87laSjQaWzV9ZeQSPf6Z-tI2nlEs68EQXZNnUCpwzPD89w/viewform?usp=header'" style="cursor:pointer;" >
+		                <img src="imag/1.png" alt="Evento 1">
+		                <div class="contenido">
+		                    <h4>Carrera Primavera 2025</h4>
+		                    <p>Disfruta de una ruta escénica por los campos floridos de Santiago Tulantepec. 21 de junio.</p>
+		                </div>
+		            </div>
+		            <div class="evento" data-aos="zoom-in" data-aos-delay="200">
+		                <img src="imag/2.jpg" alt="Evento 2">
+		                <div class="contenido">
+		                    <h4>Ruta Nocturna</h4>
+		                    <p>Una carrera única bajo las estrellas. Requiere luces. 5 de julio, 8:00 p.m.</p>
+		                </div>
+		            </div>
+		            <div class="evento" data-aos="zoom-in" data-aos-delay="200">
+		                <img src="imag/3.jpg" alt="Evento 3">
+		                <div class="contenido">
+		                    <h4>Gran Fondo Tulantepec</h4>
+		                    <p>Desafía tus límites en esta carrera de 100 km para ciclistas experimentados. 18 de agosto.</p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+
+		<section class="galeria" id="galeria">
+		    <div class="imagen imagen-izquierda">
+		        <img src="imag/3.jpg" alt="Imagen izquierda grande">
+		    </div>
+		    <div class="imagen imagen-derecha">
+		        <img src="imag/2.jpg" alt="Imagen derecha grande">
+		    </div>
+		</section>
+
+
+		<section class="testimonios">
+		  <div class="contenedor">
+		    <h3 class="titulo">Testimonios</h3>
+		    <div class="testimonial">
+		      <p>"Una experiencia increíble, bien organizada y con gran ambiente. ¡Volveré!"</p>
+		      <span>– Juan M., corredor</span>
+		    </div>
+		    <div class="testimonial">
+		      <p>"Gracias a Kinesis pude completar mi primer fondo ciclista. ¡Excelente apoyo!"</p>
+		      <span>– Ana L., ciclista</span>
+		    </div>
+		  </div>
+		</section>
+
+
+		<section class="registro" id="registro">
+		  <div class="contenedor">
+		    <h3 class="titulo">Inscríbete</h3>
+		    <form action="https://tuformulario.com" method="POST">
+		      <input type="text" name="nombre" placeholder="Nombre completo" required>
+		      <input type="email" name="correo" placeholder="Correo electrónico" required>
+		      <select name="evento">
+		        <option value="">Selecciona un evento</option>
+		        <option>Carrera Primavera 2025</option>
+		        <option>Ruta Nocturna</option>
+		        <option>Gran Fondo Tulantepec</option>
+		      </select>
+		      <button type="submit">Registrarme</button>
+		    </form>
+		  </div>
+		</section>
+
+
+		<section class="ubicacion" id="ubicacion">
+			<div class="contenedor">
+				<h3 class="titulo">Ubicación</h3>
+				<div class="direccion" data-aos="fade-right">
+					<p class="calle">Cuarta 160, Benito Juárez <br> 80430 Costa Rica, Sinaloa.</p>
+					<p class="telefono">(+52) 775 456 7823</p> 
+					<p class="correo">pedritosanchez3000@hotmail.com</p>   
+				</div>
+
+				<div class="horarios" data-aos="fade-right">
+					<h4>Horarios</h4>
+					<p class="entre-semana">Lunes a Viernes <br> 9:00am - 7:30pm</p>
+					<p class="fin-semana">Sábado y Domingo <br> 11:00am - 5:00pm</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.8488206744137!2d-107.39034852515708!3d24.59441310036112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86a32d385d7b6279%3A0x658c62a6e3da4a40!2sEL%20REY%20DEL%20POLLO!5e0!3m2!1ses-419!2smx!4v1708473471256!5m2!1ses-419!2smx" width="1600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+
+	</section>
+
+	<footer>
+		<div class="contenedor">
+			<div class="copyright">
+				<p>Copyright Kinesis @ 2025</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/efectos.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
