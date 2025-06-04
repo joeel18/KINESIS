@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"232","Source":"Form","Properties":{"$Name":"Screen2","$Type":"Form","$Version":"31","ActionBar":"True","AlignHorizontal":"3","AppName":"pantalla_login","BackgroundColor":"&HFFFFAFAF","BackgroundImage":"icon.jpg","Title":"Pagina Principal","Uuid":"0","$Components":[{"$Name":"Disposici\u00f3nVertical1","$Type":"VerticalArrangement","$Version":"4","AlignHorizontal":"3","BackgroundColor":"&H00FFFFFF","Height":"-2","Width":"-2","Uuid":"-1673412775","$Components":[{"$Name":"Etiqueta1","$Type":"Label","$Version":"5","FontBold":"True","FontItalic":"True","FontSize":"25","Height":"-1020","Width":"-2","Text":"Elige el evento al que quieres registrarte","TextAlignment":"1","Uuid":"-792565682"},{"$Name":"Desplegable1","$Type":"Spinner","$Version":"1","Width":"-2","Uuid":"771021397"}]}]}}
+|#
